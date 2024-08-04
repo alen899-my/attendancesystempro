@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #7abecc;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .transparent-btn {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 20px 40px; /* Increased padding */
+            margin: 10px; /* Increased margin */
+            text-align: center;
+            text-decoration: none;
+            font-size: 24px; /* Increased font size */
+            transition: all 0.3s ease;
+        }
+
+        .transparent-btn:hover {
+            background-color: #fff;
+            color: #7abecc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons">
+            <a href="{% url 'reg' %}" class="transparent-btn">Student Login</a>
+            <a href="{% url 'teacher_register' %}" class="transparent-btn">Teacher Login</a>
+        </div>
+    </div>
+</body>
+
+</html>
